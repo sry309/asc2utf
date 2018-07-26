@@ -163,4 +163,7 @@ target = sys.argv[1]
 if '%' not in target :
 	print asc_to_utf(target)
 else :
-	print utf_to_asc(target)
+	if target == '%':
+		print asc_to_utf(target)
+	else:
+		print utf_to_asc(target)
